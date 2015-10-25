@@ -2,8 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -26,134 +24,157 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjY-iO-jbM">
-                                <rect key="frame" x="202" y="61" width="60" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J35-yR-XiA">
+                                <rect key="frame" x="20" y="58" width="70" height="70"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="7"/>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dgQ-LV-N5N"/>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7KY-Ff-602"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6Q-FA-1w3">
-                                <rect key="frame" x="270" y="61" width="60" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pes-LN-4gq">
+                                <rect key="frame" x="98" y="58" width="70" height="70"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="8"/>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5BN-DR-TGQ"/>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sUY-rA-4xe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYM-WY-X1e">
-                                <rect key="frame" x="343" y="61" width="60" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDo-ze-niE">
+                                <rect key="frame" x="176" y="58" width="70" height="70"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="9"/>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o2E-WT-1QN"/>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xjh-HD-Lba"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwd-l7-OBw">
-                                <rect key="frame" x="202" y="119" width="60" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heE-66-sE2">
+                                <rect key="frame" x="20" y="136" width="70" height="70"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="4"/>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GuP-P6-69r"/>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M9g-iU-dQd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhI-2r-y0N">
-                                <rect key="frame" x="270" y="119" width="60" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GX-Ko-Irh">
+                                <rect key="frame" x="98" y="136" width="70" height="70"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="YAD-Fx-ZRu"/>
-                                    <constraint firstAttribute="height" constant="50" id="vHQ-xL-V7Y"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="5"/>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KUT-Nu-v2w"/>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vXh-sF-8vY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARw-tq-UXJ">
-                                <rect key="frame" x="343" y="119" width="60" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JX1-Yk-E3o">
+                                <rect key="frame" x="176" y="136" width="70" height="70"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="6"/>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="waB-hs-ExP"/>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S8x-Gx-I79"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myo-fm-GiT">
-                                <rect key="frame" x="202" y="177" width="60" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAL-3D-n9g">
+                                <rect key="frame" x="20" y="214" width="70" height="70"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="1"/>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="09K-3X-gkc"/>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6D0-r3-QF2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peE-in-8nr">
-                                <rect key="frame" x="270" y="177" width="60" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XI9-JW-cLb">
+                                <rect key="frame" x="98" y="214" width="70" height="70"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="2"/>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dtT-qD-v42"/>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1kd-er-MsC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38e-vc-3za">
-                                <rect key="frame" x="343" y="177" width="60" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4M-kx-5Sf">
+                                <rect key="frame" x="176" y="214" width="70" height="70"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="3"/>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yci-iK-5v7"/>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mpH-pX-h97"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17k-1p-UBe">
-                                <rect key="frame" x="270" y="235" width="60" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yae-tO-9dG">
+                                <rect key="frame" x="20" y="292" width="70" height="70"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="7"/>
+                                <connections>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QMV-iH-lE3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgI-My-yeX">
+                                <rect key="frame" x="98" y="292" width="70" height="70"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="0"/>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JpN-Q5-t3s"/>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DGk-jX-NIo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKZ-f6-XZs">
+                                <rect key="frame" x="176" y="292" width="70" height="70"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="⏎"/>
+                                <connections>
+                                    <action selector="enter" destination="BYZ-38-t0r" eventType="touchUpInside" id="hZO-61-gJD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gej-aJ-NV4">
+                                <rect key="frame" x="254" y="58" width="70" height="70"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="×"/>
+                                <connections>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yiJ-wz-YfA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNV-lo-AEn">
+                                <rect key="frame" x="254" y="136" width="70" height="70"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="÷"/>
+                                <connections>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hti-sv-GEt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s64-Mb-5Kl">
+                                <rect key="frame" x="254" y="214" width="70" height="70"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wEl-Kx-6ST"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEY-nF-BxH">
+                                <rect key="frame" x="254" y="292" width="70" height="70"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="−"/>
+                                <connections>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ey0-ZN-t95"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="38e-vc-3za" firstAttribute="centerX" secondItem="ARw-tq-UXJ" secondAttribute="centerX" id="0oS-V6-j16"/>
                             <constraint firstItem="arA-kB-1Yp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4LV-1t-dw2"/>
-                            <constraint firstItem="qhI-2r-y0N" firstAttribute="baseline" secondItem="cwd-l7-OBw" secondAttribute="firstBaseline" id="5Dx-XQ-WFk"/>
                             <constraint firstAttribute="leadingMargin" secondItem="arA-kB-1Yp" secondAttribute="leading" id="5O6-DA-SpN"/>
-                            <constraint firstItem="jYM-WY-X1e" firstAttribute="baseline" secondItem="o6Q-FA-1w3" secondAttribute="baseline" id="60y-ZV-YZO"/>
-                            <constraint firstItem="qhI-2r-y0N" firstAttribute="leading" secondItem="peE-in-8nr" secondAttribute="leading" id="6Rw-FJ-Hna"/>
-                            <constraint firstItem="qhI-2r-y0N" firstAttribute="leading" secondItem="cwd-l7-OBw" secondAttribute="trailing" constant="8" symbolic="YES" id="8CU-wy-pdI"/>
-                            <constraint firstItem="ARw-tq-UXJ" firstAttribute="leading" secondItem="qhI-2r-y0N" secondAttribute="trailing" constant="8" symbolic="YES" id="B0X-uZ-9WQ"/>
-                            <constraint firstItem="qhI-2r-y0N" firstAttribute="trailing" secondItem="17k-1p-UBe" secondAttribute="trailing" id="BcE-iJ-REe"/>
-                            <constraint firstItem="qhI-2r-y0N" firstAttribute="leading" secondItem="17k-1p-UBe" secondAttribute="leading" id="EY1-Xi-Ecv"/>
-                            <constraint firstItem="peE-in-8nr" firstAttribute="top" secondItem="qhI-2r-y0N" secondAttribute="bottom" constant="8" symbolic="YES" id="GuN-7P-TV4"/>
-                            <constraint firstItem="qhI-2r-y0N" firstAttribute="trailing" secondItem="o6Q-FA-1w3" secondAttribute="trailing" id="JHD-4q-dGv"/>
-                            <constraint firstItem="qhI-2r-y0N" firstAttribute="baseline" secondItem="ARw-tq-UXJ" secondAttribute="firstBaseline" id="MEv-f7-kIr"/>
-                            <constraint firstItem="qhI-2r-y0N" firstAttribute="trailing" secondItem="peE-in-8nr" secondAttribute="trailing" id="NQn-cJ-KRo"/>
-                            <constraint firstItem="rjY-iO-jbM" firstAttribute="baseline" secondItem="o6Q-FA-1w3" secondAttribute="baseline" id="Nu6-S6-bsn"/>
-                            <constraint firstItem="17k-1p-UBe" firstAttribute="top" secondItem="peE-in-8nr" secondAttribute="bottom" constant="8" id="TEi-cW-Zps"/>
-                            <constraint firstItem="qhI-2r-y0N" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="119" id="V1g-Bp-bJh"/>
-                            <constraint firstItem="qhI-2r-y0N" firstAttribute="top" secondItem="ARw-tq-UXJ" secondAttribute="top" id="YVb-Nr-DTD"/>
-                            <constraint firstItem="qhI-2r-y0N" firstAttribute="top" secondItem="o6Q-FA-1w3" secondAttribute="bottom" constant="8" symbolic="YES" id="bXC-8K-c3b"/>
-                            <constraint firstItem="qhI-2r-y0N" firstAttribute="firstBaseline" secondItem="cwd-l7-OBw" secondAttribute="baseline" id="ckX-RV-9YA"/>
-                            <constraint firstItem="qhI-2r-y0N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gDh-Td-VQo"/>
-                            <constraint firstItem="jYM-WY-X1e" firstAttribute="leading" secondItem="ARw-tq-UXJ" secondAttribute="leading" id="kHn-6a-1lF"/>
-                            <constraint firstItem="qhI-2r-y0N" firstAttribute="leading" secondItem="o6Q-FA-1w3" secondAttribute="leading" id="kWo-ab-I5r"/>
-                            <constraint firstItem="Myo-fm-GiT" firstAttribute="leading" secondItem="cwd-l7-OBw" secondAttribute="leading" id="kkT-U5-eG5"/>
-                            <constraint firstItem="qhI-2r-y0N" firstAttribute="baseline" secondItem="ARw-tq-UXJ" secondAttribute="baseline" id="lVx-MG-Ygz"/>
-                            <constraint firstItem="38e-vc-3za" firstAttribute="baseline" secondItem="peE-in-8nr" secondAttribute="baseline" id="oiz-rr-HJB"/>
-                            <constraint firstItem="Myo-fm-GiT" firstAttribute="baseline" secondItem="peE-in-8nr" secondAttribute="baseline" id="p9H-be-aEp"/>
-                            <constraint firstItem="rjY-iO-jbM" firstAttribute="leading" secondItem="cwd-l7-OBw" secondAttribute="leading" id="r9G-mR-BEz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="arA-kB-1Yp" secondAttribute="trailing" id="sQS-VI-aXh"/>
-                            <constraint firstItem="qhI-2r-y0N" firstAttribute="top" secondItem="cwd-l7-OBw" secondAttribute="top" id="yKS-FU-9JU"/>
                         </constraints>
                     </view>
                     <connections>
