@@ -37,9 +37,9 @@ class ViewController: UIViewController
     
     var operandStack = Array<Double>()
     
-    @IBAction func operate(sender: UIButton)
+    @IBAction func operate(sender: UIButton)//传回参数为sender，类型为UIbutton
     {
-        let operation = sender.currentTitle!
+        let operation = sender.currentTitle!//传回参数的名称currentTitle用来辨识
         if userIsInTheMiddleofTypingANumber
         {
             enter()
@@ -47,7 +47,10 @@ class ViewController: UIViewController
         
         switch operation
         {
-            case "×":performOperation(multiply)//将函数multiply当做一个参数传入，并且可以不需要单独创建一个函数
+//            case "×":performOperation(multiply)//将函数multiply当做一个参数传入，并且可以不需要单独创建一个函数
+        case "×":performOperation({ (op1:Double, op2:Double)->Double in
+            return op1*op2
+            })
 //            case "÷":performOperation(divide)
 //            case "+":
 //            case "−":
@@ -57,16 +60,11 @@ class ViewController: UIViewController
     
     func performOperation(operation :(Double,Double)->Double)//两个Double型的参数，返回一个Double型
     {
-        if operandStack.count >= 2
+        if operandStack.count >= 2//stack中至少有两个操作数
         {
             displayValue = operation(operandStack.removeLast(),operandStack.removeLast())
             enter()
         }
-    }
-    
-    func multiply(op1:Double, op2:Double)->Double
-    {
-        return op1*op2
     }
     
     @IBAction func enter()//不需要传回参数
@@ -80,11 +78,11 @@ class ViewController: UIViewController
         {
         get
         {
-            return NSNumberFormatter().numberFromString(display.text!)!.doubleValue
+            return NSNumberFormatter().numberFromString(display.text!)!.doubleValue//得到display中的字符串并转换为Double
         }
         set
         {
-            display.text = "\(newValue)"
+            display.text = "\(newValue)"//将数字转换为字符串
             userIsInTheMiddleofTypingANumber = false
         }
     }
