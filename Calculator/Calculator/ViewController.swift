@@ -48,12 +48,16 @@ class ViewController: UIViewController
         switch operation
         {
 //            case "×":performOperation(multiply)//将函数multiply当做一个参数传入，并且可以不需要单独创建一个函数
-        case "×":performOperation({ (op1:Double, op2:Double)->Double in
-            return op1*op2
-            })
-//            case "÷":performOperation(divide)
-//            case "+":
-//            case "−":
+//        case "×":performOperation({ (op1:Double, op2:Double)->Double in
+//            return op1*op2
+//        case "×":performOperation({ (op1, op2)in return op1*op2})//自动判断类型
+//            case "×":performOperation({ (op1, op2)in op1*op2})//自动判断返回值
+//            case "×":performOperation({ $0*$1 })//不需要命名变量
+            case "×":performOperation(){ $0*$1 }//最后的参数可以放在花括号外面
+            case "÷":performOperation {$1/$0}//不要括号也可以
+            case "+":performOperation {$1+$0}
+            case "−":performOperation {$1-$0}
+            case "√":performOperation {sqrt($0)}
         default: break
         }
     }
@@ -63,6 +67,16 @@ class ViewController: UIViewController
         if operandStack.count >= 2//stack中至少有两个操作数
         {
             displayValue = operation(operandStack.removeLast(),operandStack.removeLast())
+            enter()
+        }
+    }
+    
+    private func performOperation(operation :Double->Double)//同样的函数名，只有一个参数
+    //Objective-C 不支持函数重载。代码中ViewController继承了UIViewController，而UIViewController是Objective-C的代码，所以会报错。如果你把继承关系去掉，就不会报错了。obj-c不支持function overloading，但是swift支持，如果swift类里overloading的函数被obj-c调用的话，很可能crash,因此新版本的swift会报编译错误。解决这个问题不需要把函数重命名，把函数定义为private就可以了
+    {
+        if operandStack.count >= 1//stack中至少有两个操作数
+        {
+            displayValue = operation(operandStack.removeLast())
             enter()
         }
     }
