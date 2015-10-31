@@ -1,0 +1,257 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D50D49281BE4F0C600C37012 /* libjson_linux-gcc-4.2.1_libmt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D50D49271BE4F0C600C37012 /* libjson_linux-gcc-4.2.1_libmt.a */; settings = {ASSET_TAGS = (); }; };
+		D5B2F3361BE4EFB9002A60E2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5B2F3351BE4EFB9002A60E2 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D5B2F3301BE4EFB9002A60E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D50D49261BE4F0A900C37012 /* json */ = {isa = PBXFileReference; lastKnownFileType = folder; name = json; path = jsoncpptest/json; sourceTree = "<group>"; };
+		D50D49271BE4F0C600C37012 /* libjson_linux-gcc-4.2.1_libmt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libjson_linux-gcc-4.2.1_libmt.a"; path = "jsoncpptest/libjson_linux-gcc-4.2.1_libmt.a"; sourceTree = "<group>"; };
+		D5B2F3321BE4EFB9002A60E2 /* jsoncpptest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = jsoncpptest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B2F3351BE4EFB9002A60E2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5B2F32F1BE4EFB9002A60E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50D49281BE4F0C600C37012 /* libjson_linux-gcc-4.2.1_libmt.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5B2F3291BE4EFB9002A60E2 = {
+			isa = PBXGroup;
+			children = (
+				D50D49271BE4F0C600C37012 /* libjson_linux-gcc-4.2.1_libmt.a */,
+				D50D49261BE4F0A900C37012 /* json */,
+				D5B2F3341BE4EFB9002A60E2 /* jsoncpptest */,
+				D5B2F3331BE4EFB9002A60E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5B2F3331BE4EFB9002A60E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2F3321BE4EFB9002A60E2 /* jsoncpptest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5B2F3341BE4EFB9002A60E2 /* jsoncpptest */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2F3351BE4EFB9002A60E2 /* main.cpp */,
+			);
+			path = jsoncpptest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5B2F3311BE4EFB9002A60E2 /* jsoncpptest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5B2F3391BE4EFB9002A60E2 /* Build configuration list for PBXNativeTarget "jsoncpptest" */;
+			buildPhases = (
+				D5B2F32E1BE4EFB9002A60E2 /* Sources */,
+				D5B2F32F1BE4EFB9002A60E2 /* Frameworks */,
+				D5B2F3301BE4EFB9002A60E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jsoncpptest;
+			productName = jsoncpptest;
+			productReference = D5B2F3321BE4EFB9002A60E2 /* jsoncpptest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5B2F32A1BE4EFB9002A60E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Aaron Hwang";
+				TargetAttributes = {
+					D5B2F3311BE4EFB9002A60E2 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = D5B2F32D1BE4EFB9002A60E2 /* Build configuration list for PBXProject "jsoncpptest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D5B2F3291BE4EFB9002A60E2;
+			productRefGroup = D5B2F3331BE4EFB9002A60E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5B2F3311BE4EFB9002A60E2 /* jsoncpptest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5B2F32E1BE4EFB9002A60E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B2F3361BE4EFB9002A60E2 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D5B2F3371BE4EFB9002A60E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D5B2F3381BE4EFB9002A60E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D5B2F33A1BE4EFB9002A60E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/jsoncpptest",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D5B2F33B1BE4EFB9002A60E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/jsoncpptest",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5B2F32D1BE4EFB9002A60E2 /* Build configuration list for PBXProject "jsoncpptest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B2F3371BE4EFB9002A60E2 /* Debug */,
+				D5B2F3381BE4EFB9002A60E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5B2F3391BE4EFB9002A60E2 /* Build configuration list for PBXNativeTarget "jsoncpptest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B2F33A1BE4EFB9002A60E2 /* Debug */,
+				D5B2F33B1BE4EFB9002A60E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5B2F32A1BE4EFB9002A60E2 /* Project object */;
+}
